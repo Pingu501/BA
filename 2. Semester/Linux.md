@@ -60,10 +60,9 @@ Spezialbits:
 - Suid-Bit - Programm als Benutzer ausgeführt -> `chmod +s`
 - Sticky-Bit - verhindert in öffentlichen Ordnern löschen durch Dritte z.B. `/tmp` -> `chmod +t`
 
-| chmod | ändert die neun Zugriffsbits von Dateien |
-|-------|------------------------------------------|
-| chown | ändert Besitzer (auch Gruppe möglich) |
-| chgrp | ändert die Gruppenzugehörigkeit |
+`chmod` ändert die neun Zugriffsbits von Dateien
+`chown` ändert Besitzer (auch Gruppe möglich)
+`chgrp` ändert die Gruppenzugehörigkeit
 
 #### Access Control Lists
 - sehr genaue Definition, wer welche Rechte auf Datei besitzt und wer nicht
