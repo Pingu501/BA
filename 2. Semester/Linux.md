@@ -84,9 +84,32 @@ Verweisen auf Dateien oder Ordner - ohne eine Kopie anzulegen (Redundanzen verme
 | `cp <datei> <ziel>`| Datei oder Ordner (mit ` -r`) kopieren |
 | `less/more` | Seitenweise Text-Dateien anzeigen |
 | `ls (<pfad>)` | Listet alle Dateien und Ordner auf |
-| `mkdir <name>` | Ordner anlegen |
+| `mv <von> <nach>` | Ordner oder Datei verschieben |
+| `touch <name>` | Leere Datei anlegen |
+| `rm <name>` | Datei oder Ordner (mit ` -rf`) entfernen |
+| `rmdir <name>` | Ordner entfernen |
 
+#### Software-Installation
+- häufig ein make-Script beigelegt
+- Paketverwaltung meist vorhanden wie z.B. apt-get, yum
 
+#### Advanced Packaging Tool (APT)
+- suchen, installieren und updaten von Paketen (Software-Teilen)
+- Verwaltung von Software-Quellen (Repos)
+- Quellen in `/etc/apt/sources.list`
+- Quellen zeilenweise: `pakettyp uri` wie z.B. `deb http://archivelubuntu.com/ubuntu/ zesty-updates main restricted`
+
+Installation von Paketen `sudo apt-get install htop`
+
+#### Cron - Jobsteuerung
+
+Verwalten von wiederkehrenden Aufgaben. In `/etc/crontab` oder `/etc/cron.d` genau definierbar, wann ein Job ausgeführt werden soll.
+
+#### SysLog
+
+Kurze Meldungen über Ereignisse, Fehler – wie ein Logbuch. Speicherort in `/var/log`. So können Fehler gefunden werden oder Spuren eins Ereignis/ Angriffs etc. suchen.
+
+Da die Datei schnell sehr groß wird, kann `logrotate` genutzt werden – am besten per Cronjob (`/etc/cron.daily/logrotate`). Konfiguration erfolgt z.B. über `/etc/logrotate.d/`. Alle Logarchive werden komprimiert und z.B. 10 Stück aufbewahrt und die restlichen (ältesten) gelöscht. 
 
 
 ## 5. Netzwerkadministration
