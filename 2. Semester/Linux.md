@@ -48,7 +48,7 @@ Administrator = superuser = root
 
 Zugriffsberechtigung `rwxrw-r--`
 
-| Zeichen | Bedeutung | Oktal |@@
+| Zeichen | Bedeutung | Oktal |
 |---------|------------------------|-------|
 | rwx | Read / Write / Execute | 7 |
 | rw- | Read / Write | 6 |
@@ -73,6 +73,7 @@ Spezialbits:
 #### Symbolische-Links
 Verweisen auf Dateien oder Ordner - ohne eine Kopie anzulegen (Redundanzen vermeiden).
 
+| | |
 |-------------------|----------|--------------------------------------|
 | feste Links | `ln <datei> <link>` | Eintrag in Dateisystem mit Metadaten |
 | symbolische Links | `ln -s <datei> <link>` | Referenz auf einen PFAD |
