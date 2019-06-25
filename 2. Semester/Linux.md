@@ -60,9 +60,10 @@ Spezialbits:
 - Suid-Bit - Programm als Benutzer ausgeführt -> `chmod +s`
 - Sticky-Bit - verhindert in öffentlichen Ordnern löschen durch Dritte z.B. `/tmp` -> `chmod +t`
 
-`chmod` ändert die neun Zugriffsbits von Dateien
-`chown` ändert Besitzer (auch Gruppe möglich)
-`chgrp` ändert die Gruppenzugehörigkeit
+Befehle:
+- `chmod` ändert die neun Zugriffsbits von Dateien
+- `chown` ändert Besitzer (auch Gruppe möglich)
+- `chgrp` ändert die Gruppenzugehörigkeit
 
 #### Access Control Lists
 - sehr genaue Definition, wer welche Rechte auf Datei besitzt und wer nicht
@@ -72,10 +73,8 @@ Spezialbits:
 #### Symbolische-Links
 Verweisen auf Dateien oder Ordner - ohne eine Kopie anzulegen (Redundanzen vermeiden).
 
-| | |
-|-------------------|----------|--------------------------------------|
-| feste Links | `ln <datei> <link>` | Eintrag in Dateisystem mit Metadaten |
-| symbolische Links | `ln -s <datei> <link>` | Referenz auf einen PFAD |
+- feste Links `ln <datei> <link>` Eintrag in Dateisystem mit Metadaten
+- symbolische Links `ln -s <datei> <link>` Referenz auf einen PFAD
 
 #### Dateiverwaltung
 
