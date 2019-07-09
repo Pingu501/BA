@@ -37,19 +37,39 @@ Wird in Kelvin (K) angegeben. Je geringer der Wert, desto rötlicher; je höher,
 | 6500 K     | D65       | bewölkter Himmel    |
 | 6700 K     | C         | ---                 |
 
-### Meßgeräte
+### Messgeräte
 
 #### Densitometer
 
-> Misst die Volltondichte, also die optische Dichte einer durchgehend mit Farbe bedeckten Fläche
+- 1 Fotodiode
+- Quantitative Messung der Farbdichte (Volltondichte) und optischen Dichte
+  - *Durchsichts*densitometer: Messen des Transmissionsgrades, d.h. Anteil durchgelassenen Lichts
+  - *Aufsichts*densitometer: Messen des Remissionsgrades, d.h. Anteil reflektierten Lichts 
+- unabhänig von der Farbe der Fläche
+- Rückschlüsse auf: 
+  - Farbschichtdicke
+  - Flächendeckung
 
-> Misst die Reflexion einer Farbe durch einen bestimmten Filter (Volltondichte)
+**Anwendung:** Linearisierung von Druckmaschinen 
+
 
 #### Colorimeter
 
-Messung bzw vergleichen von Farbintensitäten oder der Farbtemperatur
+- 3 Fotodioden
+- Messung der Lichtintensität der Rot-, Grün-, und Blauanteile (Spektralbereiche) einer Lichtquelle
+- Rückschlüsse auf:
+  - Farbmetrik (→ [Schuhsohle](#farbraum-vergleich-in-xy-darstellung))
+  - Farbräume, z.B. XYZ, Lab
+  - Lichttemperatur
+
+**Anwendung:** Kalibrierung von Monitoren
 
 #### Spektralfotometer
+
+- ähnlich zu Colorimeter
+- Spektralanalyse (seperate Messung mit ca. 30 bis 40 Fotodioden) von entsprechenden Spektralbereichen
+
+**Anwendung:** Profilierung; Kalibrierung von Monitoren, Druckern, Druckmaschinen
 
 ### Key
 
