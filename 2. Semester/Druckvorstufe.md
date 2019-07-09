@@ -6,81 +6,109 @@
 
 **Beleuchtungsstärke:**
 
-> Empfangene Strahlungsleistung je Fläche, Eine Kerze aus 1m Entfernung erzeugt ca 1lx
+> Empfangene Strahlungsleistung je Fläche, z.B. eine Kerze aus 1 m Entfernung erzeugt ca. 1 lx
 
 Formelzeichen: E,  wird in Lux (lx) angegeben.
 
-```
-Heller Sonnentag			100.000lx
-Bedeckter Sommertag		 	 20.000lx
-Beleuchtung TV-Studio	  	  1.000lx
-```
+| Beispiel              | Beleuchtungsstärke |
+|-----------------------|-------------------:|
+| Heller Sonnentag      | 100.000 lx         |
+| Bedeckter Sommertag   | 20.000 lx          |
+| Beleuchtung TV-Studio | 1.000 lx           |
+
 
 ### Metamerie
 
-> Zwei Proben welche unter bestimmten Bedinungen identische Farbvalenz erzeugen, jedoch unterschiedliche spektrale Reflexions- oder Transmissionskurven haben.
+- Entstehung des gleichen Farbeindrucks durch verschieden zusammengesetzte Farbspektren
+- *Beispiel:* Gelb (600 nm) sieht man sowohl, wenn nur monochromatisch gelbes Licht, als auch wenn rotes (700 nm) **und** 
+grünes Licht (500 nm) auf die Netzhaut trifft
 
 Es gibt die Beleuchtungs-, Beobachtergeometrie-, Beobachter-, Geometrie- und Gerätemetamerie.
 
-### Lichttemperatur und Normallicht
+### Lichttemperatur und Normlicht
 
-Wird in Kelvin angegeben. Je geringer um so rötlicher.
+Wird in Kelvin (K) angegeben. Je geringer der Wert, desto rötlicher; je höher, desto bläulicher.
 
-| Temperatur | Normallicht | Bsp |
-|---|---|---|
-| 1900K | | Kerze |
-| 2856 K | A | Glühlampe(Wolfram) |
-| 5000 K | D50 | Sonnenlicht |
-| 6500 K | D65 | bewölkter Himmel |
+| Temperatur | Normlicht | Beispiel            |
+|------------|-----------|---------------------|
+| 1900 K     | ---       | Kerze               |
+| 2856 K     | A         | Glühlampe (Wolfram) |
+| 5000 K     | D50       | Sonnenlicht         |
+| 6500 K     | D65       | bewölkter Himmel    |
+| 6700 K     | C         | ---                 |
 
-### Meßgeräte
+### Messgeräte
 
 #### Densitometer
 
-> Misst die Volltondichte, also die optische Dichte einer durchgehend mit Farbe bedeckten Fläche
+- 1 Fotodiode
+- Quantitative Messung der Farbdichte (Volltondichte) und optischen Dichte
+  - *Durchsichts*densitometer: Messen des Transmissionsgrades, d.h. Anteil durchgelassenen Lichts
+  - *Aufsichts*densitometer: Messen des Remissionsgrades, d.h. Anteil reflektierten Lichts 
+- unabhänig von der Farbe der Fläche
+- Rückschlüsse auf: 
+  - Farbschichtdicke
+  - Flächendeckung
 
-> Misst die Reflexion einer Farbe durch einen bestimmten Filter (Volltondichte)
+**Anwendung:** Linearisierung von Druckmaschinen 
+
 
 #### Colorimeter
 
-Messung bzw vergleichen von Farbintensitäten oder der Farbtemperatur
+- 3 Fotodioden
+- Messung der Lichtintensität der Rot-, Grün-, und Blauanteile (Spektralbereiche) einer Lichtquelle
+- Rückschlüsse auf:
+  - Farbmetrik (→ [Schuhsohle](#farbraum-vergleich-in-xy-darstellung))
+  - Farbräume, z.B. XYZ, Lab
+  - Lichttemperatur
+
+**Anwendung:** Kalibrierung von Monitoren
 
 #### Spektralfotometer
 
+- ähnlich zu Colorimeter
+- Spektralanalyse (seperate Messung mit ca. 30 bis 40 Fotodioden) von entsprechenden Spektralbereichen
+
+**Anwendung:** Profilierung; Kalibrierung von Monitoren, Druckern, Druckmaschinen
+
 ### Key
 
-Key ist der Ersatz für Schwarz beim Drucken. Dies hat mehrere Gründe:
+Gleiche Anteile von Cyan, Magenta und Yellow werden durch **Key** ersetzt und ist damit der Ersatz für Schwarz beim 
+Drucken. Dies hat mehrere Gründe:
 
 - Aus CMY entsteht in der Praxis kein reines Schwarz, eher ein graubraun
 - Zu viel Farbe führt zum Aufweichen des Bedruckstoffes
 - Auge ist kritischer bei Farbstichen in Grautönen
 - Eine Farbe ist billiger als 3
 - Weniger Farbe trocknet schneller
+- Beim Offsetdruck können einfarbige Ränder entstehen, v.a. bei Text relevant
 
 ### Druckfarbe
 
-Echtheit wird mit Farbmusterblätter, welche nach DIN genormt sind, bestimmt.
+Echtheit wird mit Farbmusterblättern, welche nach DIN genormt sind, bestimmt.
 
-### Sonderfarben
+### Prozessfarben vs. Sonderfarben
 
-**Prozessfarben:**
+#### Prozessfarben
 
-Die Farben aus dem Vierfarb-Prozess, also CYMK. Der Farbraum kann durch weitere Farben erweitert werden.
+- Farben aus dem Vierfarb-Prozess, also CYMK
+- Farbraum kann durch weitere Farben (→ [Sonderfarben](#sonderfarben)) erweitert werden
+- die Farbmischung erfolgt erst beim Druck / auf dem Papier
 
-**Sonderfarben:**
+#### Sonderfarben
 
-Auch Schmuckfarbe genannt. Die Farbmischung erfolgt vor dem Druck.
+- auch Schmuckfarbe / Volltonfarbe genannt
+- die Farbmischung erfolgt vor dem Druck
+- Gründe für Sonderfarben:
+    - Kann zum billigeren Drucken verwendet werden (Rot statt Yellow und Magenta)
+    - Farben außerhalb von CMYK Farbraum möglich, z.B. Firmenfarben, Neonfarben, Metallic-Farben
+    - Vermeidung von Passungenauigkeiten, z.B. bei Kleingedrucktem
 
-- Kann zum billigeren Drucken verwendet werden (Rot statt Yellow und Magenta)
-- Firmenfarben
-- Farben ausherhalb des CMYK Farbraumes
-- Neonfarben
-
-### L * a * b
+### L\*a\*b\*
 
 Entspricht YCrCb, also Aufteilung in Luminanz (L) und Buntheit/Chroma (+a = Rot, -a Grün, +b Gelb, -b Blau)
 
-ΔE beschreibt den Farbabstand
+\* kennzeichnet Gleichabständigkeit → __L\*a\*b\*__ wird daher für Berechnung des __Farbabstandes ΔE__ verwendet
 
 ```
 ΔE = √((Δa)² + (Δb)² + (ΔL)²)
@@ -90,33 +118,34 @@ Entspricht YCrCb, also Aufteilung in Luminanz (L) und Buntheit/Chroma (+a = Rot,
 ΔL = L1 – L2
 ```
 
-**Bewertung der Farbabstände**
+#### Bewertung der Farbabstände
 
-| ΔE | Bewertung |
-|---|---|
-| 0,0 - 0,5 | Kein Unterschied |
-| 0,5 - 1,0 | Erkennbar für das geübte Auge |
-| 1,0 - 2,0 | merklicher Farbunterschied |
-| 2,0 - 4,0 | wahrgenommener Farbunterschied |
-| 4,0 - 5,0 | nicht mehr toleriert |
-| > 5,0 | andere Farbe | 
+| ΔE        | Bewertung                        |
+|-----------|----------------------------------|
+| 0,0 - 0,5 | Kein Unterschied                 |
+| 0,5 - 1,0 | Erkennbar für das geübte Auge    |
+| 1,0 - 2,0 | merklicher Farbunterschied       |
+| 2,0 - 4,0 | wahrgenommener Farbunterschied   |
+| 4,0 - 5,0 | nicht mehr toleriert             |
+| \> 5,0    | andere Farbe                     | 
 
 ## Farbmanagement
 
 ### Hintergrund
 
-- Gleicher Farbeindruck auf allen Medien
+- Gleicher Farbeindruck, d.h. farbrichtige Reproduktion auf allen Medien
 - Übereinstimmung von Vorlage, Proof und Druck
 - Kann auf digitaler Consumer Seite nicht angewandt werden (Monitore und TVs können falsch eingestellt sein)
 
 
 ### Profile
 
-> Ist ein genormter Datensatz, welcher den Farbraum eines Ein- oder. Ausgabegerätes beschreibt.
+> Ist ein genormter Datensatz, welcher den Farbraum eines Ein- oder Ausgabegerätes beschreibt.
 
 > Ziel ist es, dass die Farben des Eingabegerätes auf dem Ausgabegeräte möglichst ähnlich sind.
 
-Zum erstellen werden mit dem Colorimeter die Ist-Werte mit den Soll-Werten verglichen und aus dem ΔE das Farbprofil festgelegt. Es wird die Farbübertragung beschrieben.
+Zum Erstellen werden mit dem Colorimeter die Ist-Werte mit den Soll-Werten verglichen und aus dem ΔE das Farbprofil 
+festgelegt. Es wird die Farbübertragung beschrieben.
 
 ### Renderpriorität | Rendering Intent
 
@@ -125,7 +154,7 @@ Setzt die Methode zum Umrechnen in einen anderen Farbraum fest. Die Umrechnung n
 Es gibt 4 verschiedene Rendering Intents (RIs)
 
 - wahrnehmungsorientiert (perzeptisch, fotografisch)
-- relaitv farbmetrisch
+- relativ farbmetrisch
 - absolut farbmetrisch (colorimetrisch)
 - sättigungserhaltend (Präsentationen)
 
@@ -148,11 +177,11 @@ Hat zwei Bedeutungen:
 
 ![](http://www.hannes-kraeft.de/media/grafik/cm/sRGB.png)
 
-Die große Schuhsohle zeigt den kompletten Farbraum, das Dreieck was von sRGB abgedeckt wird. Es lassen sich unterschiede in den Farbräumen visualisieren.
+Die große Schuhsohle zeigt den kompletten Farbraum, das Dreieck was von sRGB abgedeckt wird. Es lassen sich Unterschiede in den Farbräumen visualisieren.
 
 ### Farbraum Vergleich in Lab
 
-Siehe L*a*b weiter oben
+Siehe [L\*a\*b\*](#lab) weiter oben
 
 ### Proof
 
@@ -168,12 +197,12 @@ Siehe L*a*b weiter oben
 
 > Bindung an ein Ausgabeformat, Umwandlung der RGB Eingabe in die Farbräume der Ausgabe (CMYK)
 
-| | Early Binding | Intermediate binding | Late binding |
-|---|---|---|---|
+|               | Early Binding                            | Intermediate binding            | Late binding                 |
+|---------------|------------------------------------------|---------------------------------|------------------------------|
 | Konvertierung | nach der Bildbearbeitung, vor dem Layout | nach dem Layout beim PDF-Export | nach Übernahme der PDF Datei |
-| Softproof | nicht nötig | bei der Bearbeitung | bei der Übergabe |
-| Standard | PDF/X-1a | PDF/X-1a | PDF/X-4 |
-| Farben | CMYK und Sonderfarben | CMYK und Sonderfarben | CMYK und RGB mit Profil |
+| Softproof     | nicht nötig                              | bei der Bearbeitung             | bei der Übergabe             |
+| Standard      | PDF/X-1a                                 | PDF/X-1a                        | PDF/X-4                      |
+| Farben        | CMYK und Sonderfarben                    | CMYK und Sonderfarben           | CMYK und RGB mit Profil      |
 
 #### PDF/X
 
@@ -193,7 +222,7 @@ Siehe L*a*b weiter oben
 
 **Begriffe:** Druckkörper, Druckform, Druckfarbe und Bedruckstoff
 
-**Vorgang:** Anlegen, Einfärben, Drucken, Auslegen.
+**Vorgang:** Anlegen → Einfärben → Drucken → Auslegen
 
 **Druckprinzip:**
 
@@ -203,7 +232,9 @@ Siehe L*a*b weiter oben
 
 **Direkter und indirekter Druck:**
 
-Durch die Rollen wird das Bild gespiegelt. Bei einer gerade Anzahl von Rollen muss das erste Bild gespiegelt sein damit es richtig auf dem Bedruckstoff kommt. Bei einer Ungeraden Anzahl von Rollen muss das erste Bild Richtig sein, wird dann auf der Zweiten Rolle gespiegelt und landet dann doppelt gespiegelt, also wieder richtig, auf dem Bedruckstoff
+Durch die Rollen wird das Bild gespiegelt. Bei einer geraden Anzahl von Rollen muss das erste Bild gespiegelt sein, 
+damit es richtig auf dem Bedruckstoff kommt. Bei einer ungeraden Anzahl von Rollen muss das erste Bild richtig sein, 
+wird dann auf der zweiten Rolle gespiegelt und landet dann doppelt gespiegelt, also wieder richtig, auf dem Bedruckstoff.
 
 ### Hochdruck:
 
@@ -213,7 +244,8 @@ Durch die Rollen wird das Bild gespiegelt. Bei einer gerade Anzahl von Rollen mu
 
 **Druckbild:** Quetschrand
 
-**Funktionsweise:** Druckform mit Ausdellungen (wie Stempel). Druckform wird von Farbwerk mit Farbe versehen. Gegendruckzylinder drückt den Bedruckstoff an die Druckform. Druckform und Bedruckstoff bewegen sich
+**Funktionsweise:** Druckform mit Ausdellungen (wie Stempel). Druckform wird von Farbwerk mit Farbe versehen. 
+Gegendruckzylinder drückt den Bedruckstoff an die Druckform. Druckform und Bedruckstoff bewegen sich.
 
 ### Tiefdruck
 
@@ -223,9 +255,13 @@ Durch die Rollen wird das Bild gespiegelt. Bei einer gerade Anzahl von Rollen mu
 
 **Druckbild:** Zackenrand durch Stege
 
-**Besonderheiten:** Echte Halbtöne möglich, extrem schnell (16m/s)
+**Besonderheiten:** 
+ - Echte Halbtöne möglich 
+ - extrem schnell (16m/s)
 
-**Funktionsweise:** Die Druckform dreht sich in der Farbwanne, wodurch sich in den Vertiefungen Farbe sammelt. Am Ende der Farbwanne streicht die Rakel die überschüssige Farbe ab. Der Bedruckstoff wird vom Gegendruckzylinder an die Druckform gepresst und bewegt sich laufend mit.
+**Funktionsweise:** Die Druckform dreht sich in der Farbwanne, wodurch sich in den Vertiefungen Farbe sammelt. Am Ende 
+der Farbwanne streicht die Rakel die überschüssige Farbe ab. Der Bedruckstoff wird vom Gegendruckzylinder an die 
+Druckform gepresst und bewegt sich laufend mit.
 
 ### Flachdruck (Offset)
 
@@ -233,9 +269,16 @@ Durch die Rollen wird das Bild gespiegelt. Bei einer gerade Anzahl von Rollen mu
 
 **Druckbild:** sauberer Rand
 
-**Besonderheiten:** hervorragende Qualität, druck ist durch fetthaltige Farbe wasserfest, sehr schnell und kann großflächig genutzt werden, lässt sich veredeln
+**Besonderheiten:**
+- hervorragende Qualität 
+- Druck ist durch fetthaltige Farbe wasserfest 
+- sehr schnell
+- kann großflächig genutzt werden 
+- lässt sich veredeln
 
-**Funktionsweise:** Die Druckform wird durch das Feuchtwerk benässt, danach wird vom Farbwerk die Farbe aufgetragen. Diese wird auf ein Gummituch übertragen, welches die Farbe letztendlich auf den Bedruckstoff, welcher durch den Gegendruckzylinder an das Gummituch gepresst wird, bringt.
+**Funktionsweise:** Die Druckform wird durch das Feuchtwerk benässt, danach wird vom Farbwerk die Farbe aufgetragen. 
+Diese wird auf ein Gummituch übertragen, welches die Farbe letztendlich auf den Bedruckstoff, welcher durch den 
+Gegendruckzylinder an das Gummituch gepresst wird, bringt.
 
 ### Siebdruck
 
@@ -243,7 +286,8 @@ Durch die Rollen wird das Bild gespiegelt. Bei einer gerade Anzahl von Rollen mu
 
 **Druckbild:** Zackenrand auf Grund der Siebfäden
 
-**Funktionsweise:** Farbe wird mit einem Räkel für das Sieb gezogen. Unter dem Sieb liegt die Schablone, welche an den gewünschten Stellen die Farbe auf den Bedruckstoff durchlässt
+**Funktionsweise:** Farbe wird mit einem Räkel für das Sieb gezogen. Unter dem Sieb liegt die Schablone, welche an den 
+gewünschten Stellen die Farbe auf den Bedruckstoff durchlässt.
 
 ### Digitaldruck
 
@@ -266,27 +310,29 @@ Durch die Rollen wird das Bild gespiegelt. Bei einer gerade Anzahl von Rollen mu
 
 > Keine Fläche drucken sondern einzelne Punkte um Transparenzen und Farbverläufe vorzugaukeln
 
-Druckerpunkte sind die kleinsten möglichen Einheiten, diese lassen sich zu Halbtonpunkten zusammenfassen. Viele Halbtonpunkte ergeben dann den kompletten Druck (siehe Autotypische Farbmischung).
+Druckerpunkte sind die kleinsten möglichen Einheiten, diese lassen sich zu Halbtonpunkten zusammenfassen. Viele 
+Halbtonpunkte ergeben dann den kompletten Druck (siehe Autotypische Farbmischung).
 
 ### Halbtonzelle
 
 Ist der Bereich des Halbtonpunktes plus dessen unbedruckte Umgebung.
 
 ```
-2 	Graustufen	dpi = lpi
-5 	Graustufen	dpi = 2 x lpi
-10 Graustufen		dpi = 3 x lpi```
+2 Graustufen	    dpi = lpi
+5 Graustufen	    dpi = 2 x lpi
+10 Graustufen	    dpi = 3 x lpi
+```
 
-Siehe Berechnungen für mehr Informationen
+Siehe → [Berechnungen](#berechnungen) für mehr Informationen
 
 ### Auflösung
 
-| | Abkürzung | Punkte pro Inch | |
-|---|---|---|---|
-| Scanner | dpi | dots per inch | Geräteauflösung
-| PS-Datei | ppi | pixel per inch | Dateiauflösung |
-| Druckerauflösung | dpi | dots per inch | Druckerauflösung |
-| Druckraster | lpi | lines per inch | abhängig zur Druckerauflösung |
+|                  | Abkürzung | Punkte pro Inch |                               |
+|------------------|-----------|-----------------|-------------------------------|
+| Scanner          | dpi       | dots per inch   | Geräteauflösung               |
+| Photoshop-Datei  | ppi       | pixel per inch  | Dateiauflösung                |
+| Druckerauflösung | dpi       | dots per inch   | Druckerauflösung              |
+| Druckraster      | lpi       | lines per inch  | abhängig zur Druckerauflösung |
 
 ### AM & FM
 
@@ -296,9 +342,18 @@ Siehe Berechnungen für mehr Informationen
 
 ### Moiré
 
-**Ursache:** Überlagerung von Rastern, zeigt sich oft erst beim Druck
+![](http://www.hannes-kraeft.de/media/grafik/druck/d176.jpg)
 
-**Vermeiden:** Keine kleinen Muster (kleinkariertes Jacket im TV), FM-Raster, kein AM-Raster beim Druck. Alternativ gibt es eine Entrasterungsfunktion
+**Ursache:** 
+- Überlagerung von Rastern (aus Vorlage, Digitalisierung und Druck)
+- zeigt sich oft erst beim Druck
+
+**Vermeidung:** 
+- Keine kleinen Muster (kleinkariertes Jacket im TV) verwenden
+- Beim Druck FM-Raster, kein AM-Raster verwenden
+
+**Alternative:** 
+- Scanner haben teilweise Entrasterungsfunktion
 
 ### Papier
 
@@ -318,34 +373,36 @@ Siehe Berechnungen für mehr Informationen
 
 ### Überfüllen & Überdrucken
 
-Verschiedene Farben werden nacheinander gedruckt, dabei muss der Bedruckstoff allerdings perfekt Ausgerichtet sein, da es sonst zu Veschiebungen kommt. Dies lässt sich allerdings nicht realisieren.
+Verschiedene Farben werden nacheinander gedruckt, dabei muss der Bedruckstoff allerdings perfekt Ausgerichtet sein, da 
+es sonst zu Veschiebungen kommt. Dies lässt sich allerdings nicht realisieren.
 
-Deshalb wird an den Grenzflächen eine Linie gelegt, wodurch sich diese überschneiden. So wird verhindert dass die Farbe des Bedruckstoffes durchscheint (Blitzer)
+Deshalb wird an den Grenzflächen eine Linie gelegt, wodurch sich diese überschneiden. So wird verhindert, dass die Farbe 
+des Bedruckstoffes durchscheint (Blitzer).
 
-Wurde früher im Layoutprogramm gemacht, heute meist durch die Druckerei
+Wurde früher im Layoutprogramm gemacht, heute meist durch die Druckerei.
 
 ### PDF/X
 
-| Druckproblem | PDF/X-1a | PDF/X-4
-|---|---|---|
-| CMYK | möglich | möglich |
-| Sonderfarben | möglich | möglich |
-| RGB Bilder | nein | mit Profil |
-| Transparenz | nein | möglich |
-| Ebenen | nein | möglich |
-| OpenType | nein | möglich |
-| 16bit/Kanal | nein | möglich |
-| JPEG2000 | nein | möglich |
-| Trim-Box | erforderlich | <- |
-| Notizen | Nur außerhalb des Druckbereichs | <- |
-| Bilder | eingebettet | <- |
-| Schriften | eingebettet | <- |
-| Interaktivität | nein | <- |
-| Formulare | nein | <- |
-| Überfüllung | Angabe, ob überfüllt wurde | <- |
-| OutputIntent | erforderlich | <- |
-| Passwortschutz | nein | <- |
-| separierte Ausgabe | nein, nur Composit (bunte Bilder) | <- |
+| Druckproblem         | PDF/X-1a                            | PDF/X-4      |
+| -------------------- | ----------------------------------- | -------------|
+| CMYK                 | möglich                             | möglich      |
+| Sonderfarben         | möglich                             | möglich      |
+| RGB Bilder           | nein                                | mit Profil   |
+| Transparenz          | nein                                | möglich      |
+| Ebenen               | nein                                | möglich      |
+| OpenType             | nein                                | möglich      |
+| 16bit/Kanal          | nein                                | möglich      |
+| JPEG2000             | nein                                | möglich      |
+| Trim-Box             | erforderlich                        | ←            |
+| Notizen              | Nur außerhalb des Druckbereichs     | ←            |
+| Bilder               | eingebettet                         | ←            |
+| Schriften            | eingebettet                         | ←            |
+| Interaktivität       | nein                                | ←            |
+| Formulare            | nein                                | ←            |
+| Überfüllung          | Angabe, ob überfüllt wurde          | ←            |
+| OutputIntent         | erforderlich                        | ←            |
+| Passwortschutz       | nein                                | ←            |
+| separierte Ausgabe   | nein, nur Composit (bunte Bilder)   | ←            |
 
 **Nicht in PDF/X:** 
 
@@ -401,11 +458,14 @@ Lsg.:
 
 ### Scannerauflösung
 
-```Scannauflösung (dpi bzw. ppi) = Rasterweite(lpi) * Skalierungsfaktor * Qualitätsfaktor```
+```
+Scannauflösung (dpi bzw. ppi) = Rasterweite(lpi) * Skalierungsfaktor * Qualitätsfaktor
+```
 
 **Aufgabe**
 
-Von einem Kleinbild-Dia im Querformat soll ein maximaler Bildausschnitt auf 6x9cm Hochformat reproduziert werden. Berechnen Sie die Scanauflösung für das 70er Raster in Pixel pro Inch!
+Von einem Kleinbild-Dia im Querformat soll ein maximaler Bildausschnitt auf 6x9cm Hochformat reproduziert werden. 
+Berechnen Sie die Scanauflösung für das 70er Raster in Pixel pro Inch!
 
 ```
 geg.:
