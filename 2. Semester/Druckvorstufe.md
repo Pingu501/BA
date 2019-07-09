@@ -6,15 +6,16 @@
 
 **Beleuchtungsstärke:**
 
-> Empfangene Strahlungsleistung je Fläche, Eine Kerze aus 1m Entfernung erzeugt ca 1lx
+> Empfangene Strahlungsleistung je Fläche, z.B. eine Kerze aus 1 m Entfernung erzeugt ca. 1 lx
 
 Formelzeichen: E,  wird in Lux (lx) angegeben.
 
-```
-Heller Sonnentag			100.000lx
-Bedeckter Sommertag		 	 20.000lx
-Beleuchtung TV-Studio	  	  1.000lx
-```
+| Beispiel              | Beleuchtungsstärke |
+|-----------------------|-------------------:|
+| Heller Sonnentag      | 100.000 lx         |
+| Bedeckter Sommertag   | 20.000 lx          |
+| Beleuchtung TV-Studio | 1.000 lx           |
+
 
 ### Metamerie
 
@@ -275,7 +276,8 @@ Ist der Bereich des Halbtonpunktes plus dessen unbedruckte Umgebung.
 ```
 2 	Graustufen	dpi = lpi
 5 	Graustufen	dpi = 2 x lpi
-10 Graustufen		dpi = 3 x lpi```
+10 Graustufen		dpi = 3 x lpi
+```
 
 Siehe Berechnungen für mehr Informationen
 
@@ -401,7 +403,9 @@ Lsg.:
 
 ### Scannerauflösung
 
-```Scannauflösung (dpi bzw. ppi) = Rasterweite(lpi) * Skalierungsfaktor * Qualitätsfaktor```
+```
+Scannauflösung (dpi bzw. ppi) = Rasterweite(lpi) * Skalierungsfaktor * Qualitätsfaktor
+```
 
 **Aufgabe**
 
