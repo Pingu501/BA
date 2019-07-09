@@ -73,38 +73,42 @@ Wird in Kelvin (K) angegeben. Je geringer der Wert, desto rötlicher; je höher,
 
 ### Key
 
-Key ist der Ersatz für Schwarz beim Drucken. Dies hat mehrere Gründe:
+Gleiche Anteile von Cyan, Magenta und Yellow werden durch **Key** ersetzt und ist damit der Ersatz für Schwarz beim 
+Drucken. Dies hat mehrere Gründe:
 
 - Aus CMY entsteht in der Praxis kein reines Schwarz, eher ein graubraun
 - Zu viel Farbe führt zum Aufweichen des Bedruckstoffes
 - Auge ist kritischer bei Farbstichen in Grautönen
 - Eine Farbe ist billiger als 3
 - Weniger Farbe trocknet schneller
+- Beim Offsetdruck können einfarbige Ränder entstehen, v.a. bei Text relevant
 
 ### Druckfarbe
 
-Echtheit wird mit Farbmusterblätter, welche nach DIN genormt sind, bestimmt.
+Echtheit wird mit Farbmusterblättern, welche nach DIN genormt sind, bestimmt.
 
-### Sonderfarben
+### Prozessfarben vs. Sonderfarben
 
-**Prozessfarben:**
+#### Prozessfarben
 
-Die Farben aus dem Vierfarb-Prozess, also CYMK. Der Farbraum kann durch weitere Farben erweitert werden.
+- Farben aus dem Vierfarb-Prozess, also CYMK
+- Farbraum kann durch weitere Farben (→ [Sonderfarben](#sonderfarben)) erweitert werden
+- die Farbmischung erfolgt erst beim Druck / auf dem Papier
 
-**Sonderfarben:**
+#### Sonderfarben
 
-Auch Schmuckfarbe genannt. Die Farbmischung erfolgt vor dem Druck.
+- auch Schmuckfarbe / Volltonfarbe genannt
+- die Farbmischung erfolgt vor dem Druck
+- Gründe für Sonderfarben:
+    - Kann zum billigeren Drucken verwendet werden (Rot statt Yellow und Magenta)
+    - Farben außerhalb von CMYK Farbraum möglich, z.B. Firmenfarben, Neonfarben, Metallic-Farben
+    - Vermeidung von Passungenauigkeiten, z.B. bei Kleingedrucktem
 
-- Kann zum billigeren Drucken verwendet werden (Rot statt Yellow und Magenta)
-- Firmenfarben
-- Farben ausherhalb des CMYK Farbraumes
-- Neonfarben
-
-### L * a * b
+### L\*a\*b\*
 
 Entspricht YCrCb, also Aufteilung in Luminanz (L) und Buntheit/Chroma (+a = Rot, -a Grün, +b Gelb, -b Blau)
 
-ΔE beschreibt den Farbabstand
+\* kennzeichnet Gleichabständigkeit → __L\*a\*b\*__ wird daher für Berechnung des __Farbabstandes ΔE__ verwendet
 
 ```
 ΔE = √((Δa)² + (Δb)² + (ΔL)²)
@@ -114,16 +118,16 @@ Entspricht YCrCb, also Aufteilung in Luminanz (L) und Buntheit/Chroma (+a = Rot,
 ΔL = L1 – L2
 ```
 
-**Bewertung der Farbabstände**
+#### Bewertung der Farbabstände
 
-| ΔE | Bewertung |
-|---|---|
-| 0,0 - 0,5 | Kein Unterschied |
-| 0,5 - 1,0 | Erkennbar für das geübte Auge |
-| 1,0 - 2,0 | merklicher Farbunterschied |
-| 2,0 - 4,0 | wahrgenommener Farbunterschied |
-| 4,0 - 5,0 | nicht mehr toleriert |
-| > 5,0 | andere Farbe | 
+| ΔE        | Bewertung                        |
+|-----------|----------------------------------|
+| 0,0 - 0,5 | Kein Unterschied                 |
+| 0,5 - 1,0 | Erkennbar für das geübte Auge    |
+| 1,0 - 2,0 | merklicher Farbunterschied       |
+| 2,0 - 4,0 | wahrgenommener Farbunterschied   |
+| 4,0 - 5,0 | nicht mehr toleriert             |
+| \> 5,0    | andere Farbe                     | 
 
 ## Farbmanagement
 
