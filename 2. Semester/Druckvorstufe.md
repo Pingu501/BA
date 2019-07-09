@@ -19,20 +19,23 @@ Formelzeichen: E,  wird in Lux (lx) angegeben.
 
 ### Metamerie
 
-> Zwei Proben welche unter bestimmten Bedinungen identische Farbvalenz erzeugen, jedoch unterschiedliche spektrale Reflexions- oder Transmissionskurven haben.
+- Entstehung des gleichen Farbeindrucks durch verschieden zusammengesetzte Farbspektren
+- *Beispiel:* Gelb (600 nm) sieht man sowohl, wenn nur monochromatisch gelbes Licht, als auch wenn rotes (700 nm) **und** 
+grünes Licht (500 nm) auf die Netzhaut trifft
 
 Es gibt die Beleuchtungs-, Beobachtergeometrie-, Beobachter-, Geometrie- und Gerätemetamerie.
 
-### Lichttemperatur und Normallicht
+### Lichttemperatur und Normlicht
 
-Wird in Kelvin angegeben. Je geringer um so rötlicher.
+Wird in Kelvin (K) angegeben. Je geringer der Wert, desto rötlicher; je höher, desto bläulicher.
 
-| Temperatur | Normallicht | Bsp |
-|---|---|---|
-| 1900K | | Kerze |
-| 2856 K | A | Glühlampe(Wolfram) |
-| 5000 K | D50 | Sonnenlicht |
-| 6500 K | D65 | bewölkter Himmel |
+| Temperatur | Normlicht | Beispiel            |
+|------------|-----------|---------------------|
+| 1900 K     | ---       | Kerze               |
+| 2856 K     | A         | Glühlampe (Wolfram) |
+| 5000 K     | D50       | Sonnenlicht         |
+| 6500 K     | D65       | bewölkter Himmel    |
+| 6700 K     | C         | ---                 |
 
 ### Meßgeräte
 
