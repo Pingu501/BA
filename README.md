@@ -9,3 +9,5 @@ auffallen stellt bitte direkt einen PR (oder zumindest einen Issue)
 
 - Myself
 - [renickbuettner](https://github.com/renickbuettner)
+- [carlmrichter](https://github.com/carlmrichter)
+
