@@ -325,9 +325,18 @@ Siehe Berechnungen für mehr Informationen
 
 ### Moiré
 
-**Ursache:** Überlagerung von Rastern, zeigt sich oft erst beim Druck
+![](http://www.hannes-kraeft.de/media/grafik/druck/d176.jpg)
 
-**Vermeiden:** Keine kleinen Muster (kleinkariertes Jacket im TV), FM-Raster, kein AM-Raster beim Druck. Alternativ gibt es eine Entrasterungsfunktion
+**Ursache:** 
+- Überlagerung von Rastern (aus Vorlage, Digitalisierung und Druck)
+- zeigt sich oft erst beim Druck
+
+**Vermeidung:** 
+- Keine kleinen Muster (kleinkariertes Jacket im TV) verwenden
+- Beim Druck FM-Raster, kein AM-Raster verwenden
+
+**Alternative:** 
+- Scanner haben teilweise Entrasterungsfunktion
 
 ### Papier
 
